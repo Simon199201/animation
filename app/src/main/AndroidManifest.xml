@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yishu.animation">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ValueAnimatorActivity"
+            android:label="@string/property_animation_value" />
+        <activity
+            android:name=".activity.ObjectAnimatorActivity"
+            android:label="@string/property_animation_object" />
+        <activity
+            android:name=".activity.AnimatorSetActivity"
+            android:label="@string/animatorSet" />
+    </application>
+
+</manifest>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Animation</string>
+    <string name="valueAnimator">valueAnimator</string>
+    <string name="normal_animation">逐帧动画和补间动画</string>
+    <string name="property_animation_value">属性动画_ValueAnimation</string>
+    <string name="property_animation_object">属性动画_ObjectAnimation</string>
+    <string name="property_animationSet">组合动画</string>
+    <string name="float_">float</string>
+    <string name="int_">int</string>
+    <string name="alpha">alpha</string>
+    <string name="rotate">rotate</string>
+    <string name="scale">scale</string>
+    <string name="object">ObjectAnimation高级用法</string>
+    <string name="translation">translation</string>
+    <string name="animatorSet">animatorSet</string>
+</resources>
