@@ -34,5 +34,15 @@
         android:layout_height="wrap_content"
         android:text="@string/object" />
 
+    <Button
+        android:id="@+id/btn_Interpolator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/interpolator" />
 
+    <Button
+        android:id="@+id/btn_ViewPropertyAnimator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_ViewPropertyAnimator" />
 </LinearLayout>

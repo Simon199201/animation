@@ -5,6 +5,7 @@ import android.animation.ValueAnimator;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.view.animation.BounceInterpolator;
 import android.widget.Button;
 
 import com.yishu.animation.R;
@@ -32,6 +33,10 @@ public class ObjectAnimatorActivity extends Activity {
     Button btnScaleY;
     @BindView(R.id.btn_advance)
     Button btnAdvance;
+    @BindView(R.id.btn_Interpolator)
+    Button btnInterpolator;
+    @BindView(R.id.btn_ViewPropertyAnimator)
+    Button btnViewPropertyAnimator;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -77,5 +82,19 @@ public class ObjectAnimatorActivity extends Activity {
         ValueAnimator valueAnimator = ValueAnimator.ofObject(new PointEvaluator(), point1, point2);
         valueAnimator.setDuration(5000);
 
+    }
+
+    @OnClick(R.id.btn_Interpolator)
+    public void onBtn_InterpolatorClicked() {
+        ObjectAnimator animator = ObjectAnimator.ofFloat(btnInterpolator, "translationX", 0, 500f);
+        animator.setDuration(5000);
+//        animator.setInterpolator(new AccelerateInterpolator(2f));//加速度
+        animator.setInterpolator(new BounceInterpolator());//仿物理定律
+        animator.start();
+    }
+
+    @OnClick(R.id.btn_ViewPropertyAnimator)
+    public void onBtn_ViewPropertyAnimatorClicked() {
+        btnViewPropertyAnimator.animate().alpha(0.5f);
     }
 }

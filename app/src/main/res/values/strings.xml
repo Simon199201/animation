@@ -13,4 +13,6 @@
     <string name="object">ObjectAnimation高级用法</string>
     <string name="translation">translation</string>
     <string name="animatorSet">animatorSet</string>
+    <string name="interpolator">Interpolator</string>
+    <string name="btn_ViewPropertyAnimator">ViewPropertyAnimator</string>
 </resources>
