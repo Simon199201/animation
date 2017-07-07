@@ -74,4 +74,27 @@ public class MyAnimView extends View {
     private void drawCircle(Canvas canvas) {
         canvas.drawCircle(currentPoint.getX(), currentPoint.getY(), RADIUS, mPaint);
     }
+
+    /**
+     * 测量布局长宽
+     * @param widthMeasureSpec
+     * @param heightMeasureSpec
+     */
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+    }
+
+    /**
+     * 子布局位置
+     * @param changed
+     * @param left
+     * @param top
+     * @param right
+     * @param bottom
+     */
+    @Override
+    protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
+        super.onLayout(changed, left, top, right, bottom);
+    }
 }
